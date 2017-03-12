@@ -8,14 +8,14 @@
 int main()
 {
 	std::string name;
-	float fixed_salary;
-	float sales,total;
-	const float comission = 0.15;
+	double fixed_salary;
+	double sales,total;
+	const double comission = 0.15;
 	std::cin >> name;
 	std::cin >> fixed_salary;
 	std::cin >> sales;
 	total = fixed_salary + (sales*comission);
-	std::fesetround(FE_DOWNWARD);
+//	std::fesetround(FE_DOWNWARD);
 	std::cout << "TOTAL = R$ " << std::setprecision(2) << std::fixed << total << std::endl;
 	return 0;
 }
